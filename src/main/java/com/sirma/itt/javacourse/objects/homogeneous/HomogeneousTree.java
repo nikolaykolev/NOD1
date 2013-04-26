@@ -25,7 +25,7 @@ public class HomogeneousTree {
 	}
 
 	/**
-	 * override method for node adding method.
+	 * overloading for node adding method.
 	 * 
 	 * @param data
 	 *            root
@@ -64,7 +64,7 @@ public class HomogeneousTree {
 	}
 
 	/**
-	 * override for search method.
+	 * overloading for search method.
 	 * 
 	 * @param data
 	 *            value to be found
@@ -104,7 +104,7 @@ public class HomogeneousTree {
 	}
 
 	/**
-	 * override for generating method.
+	 * overloading for generating method.
 	 * 
 	 * @return override
 	 */

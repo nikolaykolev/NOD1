@@ -9,6 +9,11 @@ package com.sirma.itt.javacource.exceptions;
 public class ArrayIsFull extends Exception {
 
 	/**
+	 * Comment for serialVersionUID.
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
 	 * The Constructor.
 	 */
 	public ArrayIsFull() {

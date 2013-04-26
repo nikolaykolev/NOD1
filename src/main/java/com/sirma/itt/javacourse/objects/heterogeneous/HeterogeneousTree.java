@@ -21,7 +21,7 @@ public class HeterogeneousTree {
 	}
 
 	/**
-	 * override method for node adding method.
+	 * overloading method for node adding method.
 	 * 
 	 * @param data
 	 *            root
@@ -62,7 +62,7 @@ public class HeterogeneousTree {
 	}
 
 	/**
-	 * override for search method.
+	 * overloading for search method.
 	 * 
 	 * @param data
 	 *            value to be found
@@ -105,7 +105,7 @@ public class HeterogeneousTree {
 	}
 
 	/**
-	 * override for print method.
+	 * overloading for print method.
 	 */
 	void printTree() {
 		printTree(root);
