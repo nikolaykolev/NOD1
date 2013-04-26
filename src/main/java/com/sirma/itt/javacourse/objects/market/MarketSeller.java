@@ -9,13 +9,21 @@ import java.util.List;
  */
 public class MarketSeller extends MarketPerson implements MarketWorker {
 
+	/**
+	 * shedule.
+	 * 
+	 * @return shedule
+	 */
 	public List<String> shedule() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * salary.
+	 * 
+	 * @return salary.
+	 */
 	public int salary() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 

@@ -15,7 +15,7 @@ public class HeterogeneousTree {
 	 * @param data
 	 *            the root
 	 */
-	public HeterogeneousTree(String data) {
+	public HeterogeneousTree(Number data) {
 
 		this.root = new HeterogeneousNode(data);
 	}
@@ -26,7 +26,7 @@ public class HeterogeneousTree {
 	 * @param data
 	 *            root
 	 */
-	void addNode(String data) {
+	void addNode(Number data) {
 		addNode(data, root);
 	}
 
@@ -38,13 +38,15 @@ public class HeterogeneousTree {
 	 * @param node
 	 *            root
 	 */
-	public void addNode(String data, HeterogeneousNode node) {
+	public void addNode(Number data, HeterogeneousNode node) {
 		HeterogeneousNode current = node;
 		if (current == null) {
 			current = root;
 		}
 
-		if (data.compareTo(current.getValue()) > 0) {
+		String currentStr = current.getValue().toString();
+		String dataVal = data.toString();
+		if (dataVal.compareTo(currentStr) > 0) {
 			if (current.getRight() == null) {
 				current.setRight(new HeterogeneousNode(data));
 			} else {
@@ -66,7 +68,7 @@ public class HeterogeneousTree {
 	 *            value to be found
 	 * @return true/false
 	 */
-	boolean search(String data) {
+	boolean search(Number data) {
 		return search(data, root);
 	}
 
@@ -79,17 +81,20 @@ public class HeterogeneousTree {
 	 *            root
 	 * @return true/false
 	 */
-	public boolean search(String data, HeterogeneousNode node) {
+	public boolean search(Number data, HeterogeneousNode node) {
 		HeterogeneousNode current;
 		if (node == null) {
 			current = root;
 		}
 		current = node;
-		if (data.compareTo(current.getValue()) > 0) {
+		String currentStr = current.getValue().toString();
+		String dataVal = data.toString();
+
+		if (dataVal.compareTo(currentStr) > 0) {
 			if (current.getRight() != null) {
 				return search(data, current.getRight());
 			}
-		} else if (data.compareTo(current.getValue()) < 0) {
+		} else if (dataVal.compareTo(currentStr) < 0) {
 			if (current.getLeft() != null) {
 				return search(data, current.getLeft());
 			}

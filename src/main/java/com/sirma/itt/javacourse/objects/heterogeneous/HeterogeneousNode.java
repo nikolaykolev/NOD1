@@ -6,7 +6,7 @@ package com.sirma.itt.javacourse.objects.heterogeneous;
  * @author Fester
  */
 public class HeterogeneousNode {
-	private String value;
+	private Number value;
 	private HeterogeneousNode left;
 	private HeterogeneousNode right;
 
@@ -16,7 +16,7 @@ public class HeterogeneousNode {
 	 * @param data
 	 *            node's value
 	 */
-	public HeterogeneousNode(String data) {
+	public HeterogeneousNode(Number data) {
 		this.value = data;
 	}
 
@@ -25,7 +25,7 @@ public class HeterogeneousNode {
 	 * 
 	 * @return the value
 	 */
-	public String getValue() {
+	public Number getValue() {
 		return value;
 	}
 
@@ -35,7 +35,7 @@ public class HeterogeneousNode {
 	 * @param value
 	 *            the value to set
 	 */
-	public void setValue(String value) {
+	public void setValue(Number value) {
 		this.value = value;
 	}
 

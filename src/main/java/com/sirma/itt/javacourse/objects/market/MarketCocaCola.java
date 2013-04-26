@@ -1,5 +1,6 @@
 package com.sirma.itt.javacourse.objects.market;
 
+// TODO: Auto-generated Javadoc
 /**
  * coca cola drink.
  * 
@@ -7,11 +8,20 @@ package com.sirma.itt.javacourse.objects.market;
  */
 public class MarketCocaCola extends MarketProducts implements MarketDrinks {
 
+	/**
+	 * bottle type.
+	 * 
+	 * @return type
+	 */
 	public int bottleType() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
+	/**
+	 * littres.
+	 * 
+	 * @return 0
+	 */
 	public int littres() {
 		// TODO Auto-generated method stub
 		return 0;

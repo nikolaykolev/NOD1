@@ -5,13 +5,13 @@ package com.sirma.itt.javacourse.objects.heterogeneous;
  * 
  * @author Fester
  */
-public final class RunHomogeneousTree {
-	private static HeterogeneousTree tree = new HeterogeneousTree("12.9");
+public final class RunHeterogeneousTree {
+	private static HeterogeneousTree tree = new HeterogeneousTree(12.9);
 
 	/**
 	 * constructor.
 	 */
-	private RunHomogeneousTree() {
+	private RunHeterogeneousTree() {
 
 	}
 
@@ -21,11 +21,11 @@ public final class RunHomogeneousTree {
 	 */
 	public static void main(String[] args) {
 
-		tree.addNode("11");
-		tree.addNode("22.2");
-		tree.addNode("65.4f");
-		tree.addNode("32");
+		tree.addNode(11);
+		tree.addNode(22.2);
+		tree.addNode(65.4f);
+		tree.addNode(32);
 		tree.printTree();
-		System.out.print(tree.search("11"));
+		System.out.print(tree.search(11));
 	}
 }

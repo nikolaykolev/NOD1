@@ -3,6 +3,8 @@ package com.sirma.itt.javacourse.objects.sumator;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
+import com.sirma.itt.javacourse.intro.StringCalculator;
+
 /**
  * sum of 2 random type variables.
  * 
@@ -46,9 +48,10 @@ public class Sumator {
 	 * @return sum
 	 */
 	public String sum(String num1, String num2) {
-		int sum = Integer.parseInt(num1) + Integer.parseInt(num2);
+		StringCalculator calc = new StringCalculator();
+		String sum = calc.calc(num1, num2);
 
-		return Integer.toString(sum);
+		return sum;
 	}
 
 	/**

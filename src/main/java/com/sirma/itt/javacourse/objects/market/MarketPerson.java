@@ -13,8 +13,7 @@ public class MarketPerson {
 	 * 
 	 * @return the name
 	 */
-	@SuppressWarnings("unused")
-	private String getName() {
+	public String getName() {
 		return name;
 	}
 
@@ -24,8 +23,8 @@ public class MarketPerson {
 	 * @param name
 	 *            the name to set
 	 */
-	@SuppressWarnings("unused")
-	private void setName(String name) {
+
+	public void setName(String name) {
 		this.name = name;
 	}
 }

@@ -24,6 +24,7 @@ public class ZeroToHundred {
 		int number = 0;
 		try {
 			number = sc.nextInt();
+			sc.close();
 		} catch (Exception e) {
 		}
 
