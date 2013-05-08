@@ -1,30 +1,33 @@
 package com.sirma.itt.javacourse.objects.figures;
 
+// TODO: Auto-generated Javadoc
 /**
  * rectangle class.
  * 
  * @author Fester
  */
 public class Task22rect extends Task22fourSide {
-	private int b;
+
+	/** The height. */
+	private int height;
 
 	/**
-	 * Getter method for b.
+	 * Gets the height.
 	 * 
-	 * @return the b
+	 * @return the height
 	 */
-	public int getB() {
-		return b;
+	public int getHeight() {
+		return height;
 	}
 
 	/**
-	 * Setter method for b.
+	 * Sets the height.
 	 * 
-	 * @param b
-	 *            the b to set
+	 * @param height
+	 *            the new height
 	 */
-	public void setB(int b) {
-		this.b = b;
+	public void setHeight(int height) {
+		this.height = height;
 	}
 
 }

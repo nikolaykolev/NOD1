@@ -6,64 +6,65 @@ package com.sirma.itt.javacourse.objects.figures;
  * @author Fester
  */
 public class Task23Triangle extends Task23PolyLine {
-	private Task23Line a;
-	private Task23Line b;
-	private Task23Line c;
+	private Task23Line sideA;
+	private Task23Line sideB;
+	private Task23Line sideC;
 
 	/**
-	 * Getter method for a.
+	 * Getter method for sideA.
 	 * 
-	 * @return the a
+	 * @return the sideA
 	 */
-	public Task23Line getA() {
-		return a;
+	public Task23Line getSideA() {
+		return sideA;
 	}
 
 	/**
-	 * Setter method for a.
+	 * Setter method for sideA.
 	 * 
-	 * @param a
-	 *            the a to set
+	 * @param sideA
+	 *            the sideA to set
 	 */
-	public void setA(Task23Line a) {
-		this.a = a;
+	public void setSideA(Task23Line sideA) {
+		this.sideA = sideA;
 	}
 
 	/**
-	 * Getter method for b.
+	 * Getter method for sideB.
 	 * 
-	 * @return the b
+	 * @return the sideB
 	 */
-	public Task23Line getB() {
-		return b;
+	public Task23Line getSideB() {
+		return sideB;
 	}
 
 	/**
-	 * Setter method for b.
+	 * Setter method for sideB.
 	 * 
-	 * @param b
-	 *            the b to set
+	 * @param sideB
+	 *            the sideB to set
 	 */
-	public void setB(Task23Line b) {
-		this.b = b;
+	public void setSideB(Task23Line sideB) {
+		this.sideB = sideB;
 	}
 
 	/**
-	 * Getter method for c.
+	 * Getter method for sideC.
 	 * 
-	 * @return the c
+	 * @return the sideC
 	 */
-	public Task23Line getC() {
-		return c;
+	public Task23Line getSideC() {
+		return sideC;
 	}
 
 	/**
-	 * Setter method for c.
+	 * Setter method for sideC.
 	 * 
-	 * @param c
-	 *            the c to set
+	 * @param sideC
+	 *            the sideC to set
 	 */
-	public void setC(Task23Line c) {
-		this.c = c;
+	public void setSideC(Task23Line sideC) {
+		this.sideC = sideC;
 	}
+
 }

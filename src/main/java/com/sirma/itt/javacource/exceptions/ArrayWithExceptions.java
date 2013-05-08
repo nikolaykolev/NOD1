@@ -6,7 +6,7 @@ package com.sirma.itt.javacource.exceptions;
 public class ArrayWithExceptions {
 
 	/** The obj array. */
-	private Object[] obj;
+	private Object[] array;
 
 	/** The iterator. */
 	private int iterator = 0;
@@ -18,7 +18,7 @@ public class ArrayWithExceptions {
 	 *            the length
 	 */
 	public ArrayWithExceptions(int length) {
-		obj = new Object[length];
+		array = new Object[length];
 	}
 
 	/**
@@ -26,28 +26,28 @@ public class ArrayWithExceptions {
 	 * 
 	 * @param object
 	 *            the object
-	 * @throws ArrayIsFull
+	 * @throws ArrayIsFullException
 	 *             the array is full
 	 */
-	public void add(Object object) throws ArrayIsFull {
-		if (iterator == obj.length - 1) {
-			throw new ArrayIsFull("The array is full");
+	public void add(Object object) throws ArrayIsFullException {
+		if (iterator == array.length - 1) {
+			throw new ArrayIsFullException("The array is full");
 		}
-		obj[iterator] = object;
+		array[iterator] = object;
 		iterator++;
 	}
 
 	/**
 	 * Removes the last added element.
 	 * 
-	 * @throws ArrayIsEmpty
+	 * @throws ArrayIsEmptyException
 	 *             the array is empty
 	 */
-	public void remove() throws ArrayIsEmpty {
+	public void remove() throws ArrayIsEmptyException {
 		if (iterator == 0) {
-			throw new ArrayIsEmpty();
+			throw new ArrayIsEmptyException();
 		}
-		obj[iterator] = null;
+		array[iterator] = null;
 		iterator--;
 
 	}
@@ -56,38 +56,32 @@ public class ArrayWithExceptions {
 	 * Prints all elements.
 	 * 
 	 * @return string with all elements
+	 * @throws ArrayIsEmptyException
+	 *             empty array exception
 	 */
-	public String allElements() {
-		String res = "";
-		for (int i = 0; i < obj.length; i++) {
-			res += obj[i] + " ";
+	public String allElements() throws ArrayIsEmptyException {
+		if (iterator == 0)
+			throw new ArrayIsEmptyException();
+
+		String result = "";
+		for (int i = 0; i < iterator; i++) {
+			result += array[i] + " ";
 		}
-		return res;
+		return result;
 	}
 
 	/**
 	 * Prints all elements.
+	 * 
+	 * @throws ArrayIsEmptyException
 	 */
 	public void printAllElements() {
-		System.out.println(allElements());
+		try {
+			System.out.println(allElements());
+		} catch (ArrayIsEmptyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
-	/**
-	 * Getter method for objectArray.
-	 * 
-	 * @return the objectArray
-	 */
-	public Object[] getObjArray() {
-		return obj;
-	}
-
-	/**
-	 * Setter method for objectArray.
-	 * 
-	 * @param objArray
-	 *            the obj array
-	 */
-	public void setObjArray(Object[] objArray) {
-		this.obj = objArray;
-	}
 }

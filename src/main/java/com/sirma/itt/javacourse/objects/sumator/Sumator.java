@@ -2,6 +2,8 @@ package com.sirma.itt.javacourse.objects.sumator;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.sirma.itt.javacourse.intro.StringCalculator;
 
@@ -48,6 +50,19 @@ public class Sumator {
 	 * @return sum
 	 */
 	public String sum(String num1, String num2) {
+
+		if (num1 == null || num2 == null) {
+			throw new IllegalArgumentException("Can't calculate empty strings");
+		}
+
+		Pattern pattern = Pattern.compile("[^0-9]");
+		Matcher m1 = pattern.matcher(num1);
+		Matcher m2 = pattern.matcher(num2);
+
+		if (m1.find() || m2.find()) {
+			throw new IllegalArgumentException("Enter only numbers without letters and other signs");
+		}
+
 		StringCalculator calc = new StringCalculator();
 		String sum = calc.calc(num1, num2);
 

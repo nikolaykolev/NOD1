@@ -18,11 +18,11 @@ public final class RunZeroToHundred {
 	/**
 	 * @param args
 	 *            no
-	 * @throws OutOfBounds
+	 * @throws OutOfBoundsException
 	 *             if number is not in range [0-100]
 	 */
-	public static void main(String[] args) throws OutOfBounds {
-		for (int i = 0; i < 10; i++) {
+	public static void main(String[] args) throws OutOfBoundsException {
+		while (true) {
 			System.out.println(readNumbers.read());
 		}
 

@@ -45,6 +45,22 @@ public class TestSumator {
 	}
 
 	/**
+	 * testing strings with null sumator method.
+	 */
+	@Test(expected = IllegalArgumentException.class)
+	public void testNullStrings() {
+		sm.sum(null, "");
+	}
+
+	/**
+	 * testing strings sumator method.
+	 */
+	@Test(expected = IllegalArgumentException.class)
+	public void testMinusStrings() {
+		sm.sum("-10", "21");
+	}
+
+	/**
 	 * testing Big integer sumator method.
 	 */
 	@Test

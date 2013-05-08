@@ -5,7 +5,7 @@ package com.sirma.itt.javacourse.objects.market;
  * 
  * @author Fester
  */
-public class MarketSprite extends MarketProducts implements MarketDrinks {
+public class MarketSprite extends MarketFoods implements MarketDrinks {
 
 	public int bottleType() {
 		// TODO Auto-generated method stub

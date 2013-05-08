@@ -2,7 +2,7 @@ package com.sirma.itt.javacourse.exceptions;
 
 import org.junit.Test;
 
-import com.sirma.itt.javacource.exceptions.OutOfBounds;
+import com.sirma.itt.javacource.exceptions.OutOfBoundsException;
 import com.sirma.itt.javacource.exceptions.ZeroToHundred;
 
 /**
@@ -16,11 +16,11 @@ public class ZeroToHundredTest {
 	/**
 	 * testing numbers between 0-100 reader method exception.
 	 * 
-	 * @throws OutOfBounds
+	 * @throws OutOfBoundsException
 	 *             if array is full
 	 */
-	@Test(expected = OutOfBounds.class)
-	public void testFullArray() throws OutOfBounds {
+	@Test(expected = OutOfBoundsException.class)
+	public void testFullArray() throws OutOfBoundsException {
 		range.read(111);
 	}
 }

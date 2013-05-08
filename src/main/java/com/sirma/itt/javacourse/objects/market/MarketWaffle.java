@@ -5,8 +5,13 @@ package com.sirma.itt.javacourse.objects.market;
  * 
  * @author Fester
  */
-public class MarketWaffle extends MarketProducts implements MarketSweets {
+public class MarketWaffle extends MarketFoods implements MarketSweets {
 
+	/**
+	 * sweetness.
+	 * 
+	 * @return sweet level
+	 */
 	public int sweetLevel() {
 		// TODO Auto-generated method stub
 		return 0;

@@ -6,7 +6,7 @@ package com.sirma.itt.javacourse.objects.market;
  * 
  * @author Fester
  */
-public class MarketCocaCola extends MarketProducts implements MarketDrinks {
+public class MarketCocaCola extends MarketFoods implements MarketDrinks {
 
 	/**
 	 * bottle type.

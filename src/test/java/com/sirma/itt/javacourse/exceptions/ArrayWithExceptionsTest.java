@@ -1,11 +1,9 @@
 package com.sirma.itt.javacourse.exceptions;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
-import com.sirma.itt.javacource.exceptions.ArrayIsEmpty;
-import com.sirma.itt.javacource.exceptions.ArrayIsFull;
+import com.sirma.itt.javacource.exceptions.ArrayIsEmptyException;
+import com.sirma.itt.javacource.exceptions.ArrayIsFullException;
 import com.sirma.itt.javacource.exceptions.ArrayWithExceptions;
 
 /**
@@ -19,11 +17,12 @@ public class ArrayWithExceptionsTest {
 	/**
 	 * testing add method exception.
 	 * 
-	 * @throws ArrayIsFull
+	 * @throws ArrayIsFullException
 	 *             if array is full
+	 * @throws ArrayIsEmptyException
 	 */
-	@Test(expected = ArrayIsFull.class)
-	public void testFullArray() throws ArrayIsFull {
+	@Test(expected = ArrayIsFullException.class)
+	public void testFullArray() throws ArrayIsFullException {
 		arr.add(new Object());
 		arr.add(new Object());
 		arr.add(new Object());
@@ -31,20 +30,23 @@ public class ArrayWithExceptionsTest {
 
 	/**
 	 * testing printing method exception.
+	 * 
+	 * @throws ArrayIsEmptyException
+	 *             empty exception
 	 */
-	@Test
-	public void testPrintArray() {
-		assertEquals("null null ", arr.allElements());
+	@Test(expected = ArrayIsEmptyException.class)
+	public void testPrintArray() throws ArrayIsEmptyException {
+		arr.allElements();
 	}
 
 	/**
 	 * testing remove method exception.
 	 * 
-	 * @throws ArrayIsEmpty
+	 * @throws ArrayIsEmptyException
 	 *             if array is empty
 	 */
-	@Test(expected = ArrayIsEmpty.class)
-	public void testEmptyArray() throws ArrayIsEmpty {
+	@Test(expected = ArrayIsEmptyException.class)
+	public void testEmptyArray() throws ArrayIsEmptyException {
 		arr.remove();
 		arr.remove();
 		arr.remove();

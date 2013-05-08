@@ -4,7 +4,7 @@ package com.sirma.itt.javacource.exceptions;
 /**
  * array is empty exception.
  */
-public class ArrayIsEmpty extends Exception {
+public class ArrayIsEmptyException extends Exception {
 
 	/**
 	 * Comment for serialVersionUID.
@@ -14,7 +14,7 @@ public class ArrayIsEmpty extends Exception {
 	/**
 	 * The Constructor.
 	 */
-	public ArrayIsEmpty() {
+	public ArrayIsEmptyException() {
 		super("Array is empty");
 	}
 
@@ -24,7 +24,7 @@ public class ArrayIsEmpty extends Exception {
 	 * @param message
 	 *            the message
 	 */
-	public ArrayIsEmpty(String message) {
+	public ArrayIsEmptyException(String message) {
 		super(message);
 	}
 
@@ -36,7 +36,7 @@ public class ArrayIsEmpty extends Exception {
 	 * @param cause
 	 *            the cause
 	 */
-	public ArrayIsEmpty(String message, Throwable cause) {
+	public ArrayIsEmptyException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -46,7 +46,7 @@ public class ArrayIsEmpty extends Exception {
 	 * @param cause
 	 *            the cause
 	 */
-	public ArrayIsEmpty(Throwable cause) {
+	public ArrayIsEmptyException(Throwable cause) {
 		super(cause);
 	}
 

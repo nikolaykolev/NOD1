@@ -2,9 +2,11 @@ package com.sirma.itt.javacource.exceptions;
 
 // TODO: Auto-generated Javadoc
 /**
- * Exception class for our of range number [0-100].
+ * full array exception.
+ * 
+ * @author Fester
  */
-public class OutOfBounds extends Exception {
+public class ArrayIsFullException extends Exception {
 
 	/**
 	 * Comment for serialVersionUID.
@@ -14,8 +16,8 @@ public class OutOfBounds extends Exception {
 	/**
 	 * The Constructor.
 	 */
-	public OutOfBounds() {
-		super("Number out of bounds");
+	public ArrayIsFullException() {
+		super("Array out of bounds");
 	}
 
 	/**
@@ -24,7 +26,7 @@ public class OutOfBounds extends Exception {
 	 * @param message
 	 *            the message
 	 */
-	public OutOfBounds(String message) {
+	public ArrayIsFullException(String message) {
 		super(message);
 	}
 
@@ -36,7 +38,7 @@ public class OutOfBounds extends Exception {
 	 * @param cause
 	 *            the cause
 	 */
-	public OutOfBounds(String message, Throwable cause) {
+	public ArrayIsFullException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
@@ -46,7 +48,7 @@ public class OutOfBounds extends Exception {
 	 * @param cause
 	 *            the cause
 	 */
-	public OutOfBounds(Throwable cause) {
+	public ArrayIsFullException(Throwable cause) {
 		super(cause);
 	}
 

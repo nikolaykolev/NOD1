@@ -7,8 +7,8 @@ package com.sirma.itt.javacourse.objects.figures;
  */
 public class Task23parall extends Task23PolyLine {
 	private int angle;
-	private Task23Line a;
-	private Task23Line b;
+	private Task23Line width;
+	private Task23Line height;
 
 	/**
 	 * Getter method for angle.
@@ -30,41 +30,41 @@ public class Task23parall extends Task23PolyLine {
 	}
 
 	/**
-	 * Getter method for a.
+	 * Getter method for width.
 	 * 
-	 * @return the a
+	 * @return the width
 	 */
-	public Task23Line getA() {
-		return a;
+	public Task23Line getWidth() {
+		return width;
 	}
 
 	/**
-	 * Setter method for a.
+	 * Setter method for width.
 	 * 
-	 * @param a
-	 *            the a to set
+	 * @param width
+	 *            the width to set
 	 */
-	public void setA(Task23Line a) {
-		this.a = a;
+	public void setWidth(Task23Line width) {
+		this.width = width;
 	}
 
 	/**
-	 * Getter method for b.
+	 * Getter method for height.
 	 * 
-	 * @return the b
+	 * @return the height
 	 */
-	public Task23Line getB() {
-		return b;
+	public Task23Line getHeight() {
+		return height;
 	}
 
 	/**
-	 * Setter method for b.
+	 * Setter method for height.
 	 * 
-	 * @param b
-	 *            the b to set
+	 * @param height
+	 *            the height to set
 	 */
-	public void setB(Task23Line b) {
-		this.b = b;
+	public void setHeight(Task23Line height) {
+		this.height = height;
 	}
 
 }

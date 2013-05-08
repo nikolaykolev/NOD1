@@ -19,13 +19,32 @@ public final class RunArrayWithExceptions {
 	 *            the args
 	 */
 	public static void main(String[] args) {
-		ArrayWithExceptions arr = new ArrayWithExceptions(2);
-		for (int i = 0; i < 3; i++) {
-			try {
-				arr.add(new Object());
-			} catch (ArrayIsFull e) {
-				e.printStackTrace();
-			}
+		ArrayWithExceptions arr = new ArrayWithExceptions(4);
+
+		try {
+			arr.add(new Object());
+			arr.add(new Object());
+			arr.add(new Object());
+
+		} catch (ArrayIsFullException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			arr.remove();
+			arr.remove();
+
+		} catch (ArrayIsEmptyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			System.out.println(arr.allElements());
+		} catch (ArrayIsEmptyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 	}

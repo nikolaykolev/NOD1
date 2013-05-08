@@ -7,7 +7,7 @@ package com.sirma.itt.javacourse.objects.figures;
  */
 public class Task22rhombus extends Task22fourSide {
 	private int width;
-	private Task22square a;
+	private Task22square side;
 
 	/**
 	 * Getter method for width.
@@ -29,22 +29,22 @@ public class Task22rhombus extends Task22fourSide {
 	}
 
 	/**
-	 * Getter method for a.
+	 * Getter method for side.
 	 * 
-	 * @return the a
+	 * @return the side
 	 */
-	public Task22square getA() {
-		return a;
+	public Task22square getSide() {
+		return side;
 	}
 
 	/**
-	 * Setter method for a.
+	 * Setter method for side.
 	 * 
-	 * @param a
-	 *            the a to set
+	 * @param side
+	 *            the side to set
 	 */
-	public void setA(Task22square a) {
-		this.a = a;
+	public void setSide(Task22square side) {
+		this.side = side;
 	}
 
 }

@@ -15,21 +15,23 @@ public class ZeroToHundred {
 	 * reader.
 	 * 
 	 * @return number
-	 * @throws OutOfBounds
+	 * @throws OutOfBoundsException
 	 *             if number is not in range
 	 */
-	protected int read() throws OutOfBounds {
+	protected int read() throws OutOfBoundsException {
 		InputStream in = System.in;
 		Scanner sc = new Scanner(in);
 		int number = 0;
+
 		try {
 			number = sc.nextInt();
-			sc.close();
 		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Error while reading data from keyboard");
 		}
 
 		if (number > 100 || number < 0) {
-			throw new OutOfBounds("Out of bounds 0-100");
+			throw new OutOfBoundsException("Out of bounds 0-100");
 		}
 
 		return number;
@@ -41,12 +43,12 @@ public class ZeroToHundred {
 	 * @param x
 	 *            number
 	 * @return x
-	 * @throws OutOfBounds
+	 * @throws OutOfBoundsException
 	 *             if x is not between 0-100
 	 */
-	public int read(int x) throws OutOfBounds {
+	public int read(int x) throws OutOfBoundsException {
 		if (x > 100 || x < 0) {
-			throw new OutOfBounds("Out of bounds 0-100");
+			throw new OutOfBoundsException("Out of bounds 0-100");
 		}
 		return x;
 	}

@@ -6,24 +6,25 @@ package com.sirma.itt.javacourse.objects.figures;
  * @author Fester
  */
 public class Task22square extends Task22rect {
-	private int a;
+	private int side;
 
 	/**
-	 * Getter method for a.
+	 * Getter method for side.
 	 * 
-	 * @return the a
+	 * @return the side
 	 */
-	public int getA() {
-		return a;
+	public int getSide() {
+		return side;
 	}
 
 	/**
-	 * Setter method for a.
+	 * Setter method for side.
 	 * 
-	 * @param a
-	 *            the a to set
+	 * @param side
+	 *            the side to set
 	 */
-	public void setA(int a) {
-		this.a = a;
+	public void setSide(int side) {
+		this.side = side;
 	}
+
 }
