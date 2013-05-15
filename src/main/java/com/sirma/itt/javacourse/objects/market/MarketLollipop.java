@@ -9,8 +9,9 @@ package com.sirma.itt.javacourse.objects.market;
 public class MarketLollipop extends MarketFoods implements MarketSweets {
 
 	/**
-	 * {@inheritDoc}
+	 * @return 0
 	 */
+	@Override
 	public int sweetLevel() {
 		// TODO Auto-generated method stub
 		return 0;

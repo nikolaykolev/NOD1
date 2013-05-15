@@ -18,6 +18,7 @@ public class SortClasses {
 		int[] annotationsArray = new int[classes.length];
 		for (int i = 0; i < classes.length; i++) {
 
+			@SuppressWarnings("rawtypes")
 			Class myClass = classes[i].getClass();
 			Annotation[] ann = myClass.getAnnotations();
 

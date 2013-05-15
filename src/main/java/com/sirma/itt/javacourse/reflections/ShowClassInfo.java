@@ -5,7 +5,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-// TODO: Auto-generated Javadoc
 /**
  * showing info for other class.
  */
@@ -59,6 +58,7 @@ public final class ShowClassInfo {
 					+ Modifier.toString(modifier) + "\n\n");
 		}
 
+		@SuppressWarnings("rawtypes")
 		Constructor[] constr = c.getDeclaredConstructors();
 		System.out.println("CONSTRUCTORS:\n");
 		for (int i = 0; i < constr.length; i++) {

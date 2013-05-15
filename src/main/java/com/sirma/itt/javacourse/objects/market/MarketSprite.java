@@ -1,5 +1,6 @@
 package com.sirma.itt.javacourse.objects.market;
 
+// TODO: Auto-generated Javadoc
 /**
  * sprite drink.
  * 
@@ -7,11 +8,19 @@ package com.sirma.itt.javacourse.objects.market;
  */
 public class MarketSprite extends MarketFoods implements MarketDrinks {
 
+	/**
+	 * @return 0
+	 */
+	@Override
 	public int bottleType() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
+	/**
+	 * @return 0
+	 */
+	@Override
 	public int littres() {
 		// TODO Auto-generated method stub
 		return 0;

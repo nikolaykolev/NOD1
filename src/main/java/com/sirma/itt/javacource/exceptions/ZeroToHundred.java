@@ -20,6 +20,7 @@ public class ZeroToHundred {
 	 */
 	protected int read() throws OutOfBoundsException {
 		InputStream in = System.in;
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(in);
 		int number = 0;
 

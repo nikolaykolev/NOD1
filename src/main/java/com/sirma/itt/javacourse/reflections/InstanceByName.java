@@ -27,6 +27,7 @@ public class InstanceByName {
 			e.printStackTrace();
 		}
 
+		@SuppressWarnings("rawtypes")
 		Class[] interfaces = myClass.getInterfaces();
 		for (int i = 0; i < interfaces.length; i++) {
 			System.out.println(interfaces[i].getName());
