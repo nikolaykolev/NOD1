@@ -33,7 +33,7 @@ public class TestDice {
 	}
 
 	/**
-	 * Test string reader.
+	 * Test dice throwing and combinations.
 	 */
 	@Test
 	public void testCombinations() {

@@ -57,7 +57,7 @@ public final class PageBean<E> {
 	}
 
 	/**
-	 * Previous.
+	 * Previous page.
 	 * 
 	 * @return previous page
 	 */
@@ -73,7 +73,7 @@ public final class PageBean<E> {
 	}
 
 	/**
-	 * Checks for next.
+	 * Checks for next page.
 	 * 
 	 * @return true, if there is next page
 	 */
